@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    background: rgb(14,135,254);
+    background: radial-gradient(circle, rgba(14,135,254,1) 0%, rgba(70,252,226,1) 100%);
+}
+
+.navbar a{
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.636);
+    color: white;
+    padding: 12px;
+    border-radius: 32px;
+    animation: slideup 1s 0.1s 1 linear forwards;
+    font-weight: 800;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.navbar a:hover{
+    transition: all 0.5s;
+    background-color: red;
+    border: 1px solid red;
+}
+
+@keyframes slideup {
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
